@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/navigation_item_home"
+            android:icon="@drawable/ic_home_white_48dp"
+            android:title="首页" />
+        <item
+            android:id="@+id/navigation_item_mine"
+            android:icon="@drawable/ic_account_box_white_48dp"
+            android:title="我的" />
+       <!-- <item
+            android:id="@+id/navigation_item_favorites"
+            android:icon="@drawable/ic_bookmark_outline_white_48dp"
+            android:title="收藏" />-->
+        <item
+            android:id="@+id/navigation_item_setting"
+            android:icon="@drawable/ic_settings_applications_white_48dp"
+            android:title="设置" />
+
+        <item
+            android:id="@+id/navigation_item_share"
+            android:icon="@drawable/ic_share_white_48dp"
+            android:title="分享" />
+    </group>
+</menu>

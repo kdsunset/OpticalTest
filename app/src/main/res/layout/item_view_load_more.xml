@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:id="@+id/layout_foot_loadmore"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:id="@+id/linearLayout">
+
+       <!-- <com.dahuo.learn.refresh.MaterialProgressBarSupport
+            android:id="@+id/progress_view"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:progressColor="@color/line_color_run_speed_13"
+            app:progressBackgroundColor="@color/progress_background_light"
+            app:progressSmallSize="true" />-->
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/progress_view"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignRight="@+id/linearLayout"
+            android:layout_alignEnd="@+id/linearLayout"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:paddingLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="加载中..." />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@mipmap/slide_menu_bg02"
+
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<!-- android:background="?attr/colorPrimaryDark"-->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/user_logo_default"
+        app:civ_border_color="@color/primary_light"
+        app:civ_border_width="2dp"/>
+        <!--app:border_color="@color/primary_light"
+        app:border_width="2dp" />-->
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即登陆"
+
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/profile_text"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+         />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/iv_login_out"
+        android:background="@drawable/ic_input_white_24dp"/>
+</LinearLayout>

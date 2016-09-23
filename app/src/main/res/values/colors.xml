@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--侧滑菜单-->
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+
+    <color name="bg_tab_pressed">#6633b5e5</color><!-- tab条目背景蓝色 -->
+    <color name="bg_tab_normal">#00000000</color><!-- tab条目背景透明色 -->
+    <!-- <color name="bg_tab_pressed2">#ff3898ff</color>  -->
+
+    <color name="tab_text_color_selected">#ff0084ff</color> <!-- 蓝色 选中文字颜色 -->
+    <color name="tab_text_color_normal">#ff737373</color> <!-- 灰黑色 未选中文字颜色 -->
+
+    <!---->
+    <color name="primary_light">#B2DFDB</color>
+    <color name="pure_blue">#0000ff</color>
+    <color name="transparent">#88000000</color>
+
+</resources>

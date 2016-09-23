@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zin.opticaltest.activity.ExamActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+
+        android:padding="2dp">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:id="@+id/ib_back"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_arrow_back_white_24dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_timer"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="4dp"
+            android:layout_marginLeft="10dp"
+
+            android:text="01:17:57"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib_select_index"
+            android:background="@drawable/ic_apps_white_24dp"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib_handup"
+            android:background="@drawable/handup"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="2dp"
+
+            android:id="@+id/ib_more"
+
+           android:layout_marginRight="10dp"
+            android:background="@drawable/ic_more_vert_white_24dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_index"
+        android:padding="2dp"
+        android:background="#fcfcfc"
+        android:textSize="16sp"
+        android:text=""
+        android:gravity="center_vertical"/>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:id="@+id/progressBar"/>
+
+    <android.support.v4.view.ViewPager
+               android:id="@+id/vp_exam_activity"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               />
+
+
+
+</LinearLayout>

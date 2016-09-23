@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     
+
+            <TextView
+                android:text="Question Desciption"
+                android:id="@+id/question"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:background="#fcfcfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"></View>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/iv_question_img"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <RadioButton
+                    android:text="AnswerA"
+                    android:id="@+id/answerA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:button="@null"
+                    android:paddingTop="20dp"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/question_radio_butta_style"></RadioButton>
+                <RadioButton
+                    android:text="AnswerB"
+                    android:id="@+id/answerB"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/question_radio_buttb_style"
+                    android:layout_width="match_parent"
+                    android:drawablePadding="10dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"/>
+                <RadioButton
+                    android:text="AnswerC"
+                    android:id="@+id/answerC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:paddingTop="20dp"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/question_radio_buttc_style">
+
+                </RadioButton>
+                <RadioButton
+                    android:text="AnswerD"
+                    android:id="@+id/answerD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawablePadding="10dp"
+                    android:paddingTop="20dp"
+                    android:textSize="20dp"
+                    android:drawableLeft="@drawable/question_radio_buttd_style">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout_answer_edittext"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请依次填写填空题答案："
+            android:gravity="top"
+            android:layout_margin="5dp"
+            android:id="@+id/et_answerfor_edittext"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DDF0ED"
+        android:id="@+id/layout_answer_edittext_img"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="72dp"
+            android:layout_margin="5dp"
+            android:id="@+id/iv_your_answer_img"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:drawableLeft="@drawable/ic_send_white_18dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@drawable/bt__blue_selector"
+            android:id="@+id/bt_done_edittext"
+            android:text="提交"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/ic_camera_alt_white_18dp"
+            android:background="@drawable/bt__blue_selector"
+            android:id="@+id/bt_upload_answer_img"
+
+            android:text="上传答案"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:text="开始作图"
+
+            android:drawableLeft="@drawable/ic_brush_white_18dp"
+            android:background="@drawable/bt__blue_selector"
+            android:layout_marginRight="5dp"
+            android:id="@+id/bt_start_mapping"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DDF0ED"
+        android:id="@+id/answer_layout"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正确答案："
+
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_right_answer"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#90909090"
+            android:visibility="gone"
+            android:id="@+id/view_line"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的答案："
+            android:visibility="gone"
+            android:gravity="center_horizontal"
+            android:id="@+id/tv_fillin_answer"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_answer_img"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/analysis_layout"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="2dp"
+            android:background="@drawable/ic_analyze"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_analysis"
+            android:background="@drawable/ic_explaindetail"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_analysis_img"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

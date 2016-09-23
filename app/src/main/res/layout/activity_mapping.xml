@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zin.opticaltest.activity.MappingActivity">
+    <include layout="@layout/custom_toolbar"
+        android:id="@+id/tb_mapping_activity">
+
+    </include>
+<!--<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_pen"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/bt_pen_selector"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_color"
+            android:layout_weight="1"
+            android:background="@drawable/bt_color_selector"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_size"
+            android:layout_weight="1"
+            android:background="@drawable/bt_size_selector"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_undo"
+            android:layout_weight="1"
+            android:background="@drawable/bt_undo_selector"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_redo"
+            android:layout_weight="1"
+            android:background="@drawable/bt_redo_selector"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_cleanAll"
+            android:layout_weight="1"
+            android:background="@drawable/bt_cleanall_selector"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_eraser"
+            android:layout_weight="1"
+            android:background="@drawable/bt_eraser_selector"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_oritation"
+            android:layout_weight="1"
+            android:background="@drawable/bt_oritation_selector"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ib_mapping_ok"
+            android:layout_weight="1"
+            android:background="@drawable/bt_send_selector"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>-->
+    <com.zin.opticaltest.ui.DrawView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ccc"
+        android:id="@+id/dvMappingQues"/>
+</LinearLayout>
